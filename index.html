@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Live View - templatemo 473 november</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/bfdd4088e2.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- HEADER -->
+
+			<header>
+				<div class="logo">
+					<h1>
+						<a href="#">No<span id="vem">vem</span>ber</a>
+					</h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- MAIN -->
+
+			<main>
+				<p><a name="home"></a></p>
+				<div class="paragrafe">
+					<p id="unu">responsive</p>
+					<p id="doi">mobile friendly</p>
+					<p id="trei">
+						November is a professional website template that is responsive and
+						mobile friendlyfor any device.This template is provided by
+						templatemo.com
+					</p>
+					<button class="detalii"><a href="#about"> More Details</a></button>
+				</div>
+
+				<div class="galerie">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img src="slider-img1.jpg" style="width: 100%" />
+							<div class="emoji">
+								<div class="emoticoane">
+									<a href="#"><i class="fas fa-heart"></i></a>
+									<a href="#"><p class="com">700</p></a>
+									<a href="#"><i class="fas fa-comment"></i></a>
+									<a href="#"><p class="com">150</p></a>
+								</div>
+
+								<div class="scris">
+									<p class="lorem">Lorem quis bibendum</p>
+									<p class="nibel">Necagitti Nibel</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="mySlides fade">
+							<img src="slider-img2.jpg" style="width: 100%" />
+							<div class="emoji">
+								<div class="emoticoane">
+									<a href="#"><i class="fas fa-heart"></i></a>
+									<a href="#"><p class="com">700</p></a>
+									<a href="#"><i class="fas fa-comment"></i></a>
+									<a href="#"><p class="com">150</p></a>
+								</div>
+
+								<div class="scris">
+									<p class="lorem">Lorem quis bibendum</p>
+									<p class="nibel">Necagitti Nibel</p>
+								</div>
+							</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)"
+							><i class="fas fa-arrow-left"></i
+						></a>
+						<a class="next" onclick="plusSlides(1)"
+							><i class="fas fa-arrow-right"></i
+						></a>
+					</div>
+					<br />
+
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+							showSlides((slideIndex += n));
+						}
+
+						function currentSlide(n) {
+							showSlides((slideIndex = n));
+						}
+
+						function showSlides(n) {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							if (n > slides.length) {
+								slideIndex = 1;
+							}
+							if (n < 1) {
+								slideIndex = slides.length;
+							}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex - 1].style.display = "block";
+							dots[slideIndex - 1].className += " active";
+						}
+					</script>
+				</div>
+
+				<div class="linie_jos"></div>
+			</main>
+
+			<!-- ABOUT -->
+
+			<div class="about">
+				<p class="sublinie"><a name="about"></a></p>
+
+				<h1>About us</h1>
+				<p>
+					Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+					ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+					vulputate cursus a sit<br />
+					amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+					tincidunt auctor a ornare odio.
+				</p>
+				<div class="linie"></div>
+
+				<div class="butoane tab">
+					<button class="btn tablink" onclick="openpage('Mision')">
+						Mision
+					</button>
+					<button class="btn tablink" onclick="openpage('Vision')">
+						Vision
+					</button>
+					<button class="btn tablink" onclick="openpage('Sponsors')">
+						Sponsors
+					</button>
+				</div>
+
+				<section>
+					<div class="poze poza1">
+						<img src="ceai.jpg" alt="ceai" style="width: 100%" />
+					</div>
+					<div class="poze poza2">
+						<img src="munte.jpg" alt="munte" style="width: 100%" />
+					</div>
+
+					<div id="Mision" class="text tabcontent">
+						<h2>SED AC URNA SIT AMET LOREM</h2>
+
+						<h3>TACITI SOCIOSQU AD LITORA TORQUENT PER CONUBIA</h3>
+
+						<p>
+							November is free HTML CSS website template from
+							<span class="templu">templatemo</span> and you can download and
+							use it for any purpose. Lorem ipsum dolor sit amet, consectetur
+							adipiscing elit. Nullam elit nunc, porta commodo euismod eu,
+							fermentum a neque. Fusce scelerisque tincidunt auctor. Integer
+							varius ullamcorper interdum.
+						</p>
+
+						<p>
+							Phasellus pretium elementum rhoncus. Aenean sit amet odio eu ante
+							volutpat rutrum. Vestibulum ullamcorper faucibus orci, in blandit
+							massa fringilla at. Nulla in fermentum eros. Suspendisse vitae
+							aliquam metus.
+						</p>
+					</div>
+
+					<div id="Vision" class="text tabcontent" style="display: none">
+						<h2>SMAURIS VITAE CONSEQUAT</h2>
+
+						<h3>VESTIBULUM ULLAMCORPER FAUCIBUS ORCI</h3>
+
+						<p>
+							Consequat ipsum, nec sagittis sem nibh id elit. Dui sed odio sit
+							amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+							velit. Namslo nec tellus a odio tincidunt auctor a ornare odio.
+							Smauris vitae erat consequat sitsrl amet soi mauris auctor eu in
+							elit.
+						</p>
+
+						<p>
+							Class aptent taciti sociosqu ad litora torquent per conubia
+							nostraper inceptos himenaeos. Mauris in erat justo. Nullam ac urna
+							eu felis dapibus.
+						</p>
+					</div>
+
+					<div id="Sponsors" class="text tabcontent" style="display: none">
+						<h2>DONEC MOLESTIE MALESUADA NISL</h2>
+
+						<h3>AENEAN EGET CONSEQUAT DIAM</h3>
+
+						<p>
+							Nullam at sem non enim aliquam ultrices non quis magna. In
+							interdum interdum magna vitae accumsan. Etiam turpis tortor,
+							malesuada vitae metus non, pharetra auctor mi. Pellentesque
+							tincidunt enim vitae tincidunt euismod. Integer id ex enim. Nullam
+							euismod efficitur libero quis interdum.
+						</p>
+
+						<p>
+							Phasellus porttitor tempus nibh, id luctus nibh porta ac. Nunc sed
+							metus est. Proin ut nisi metus. Duis consectetur purus iaculis
+							ornare suscipit.
+						</p>
+					</div>
+
+					<script>
+						function openpage(pageName) {
+							var i, tabcontent, tablinks;
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablink");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].style.backgroundColor = "";
+							}
+							document.getElementById(pageName).style.display = "block";
+							elmnt.style.backgroundColor = color;
+						}
+
+						// Get the element with id="defaultOpen" and click on it
+						document.getElementById("defaultOpen").click();
+					</script>
+				</section>
+			</div>
+
+			<!-- SERVICES -->
+
+			<div class="services">
+				<p><a name="services"></a></p>
+
+				<h1>our services</h1>
+
+				<p>
+					Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+					ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+					Class aptent <br />
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+					himenaeos.
+				</p>
+				<div class="linie"></div>
+
+				<div class="carti">
+					<div class="carte carte1">
+						<img src="Development-bg.jpg" alt="poza" style="width: 100%" />
+						<button class="prima"><a name="services">Development</a></button>
+					</div>
+
+					<div class="carte carte2">
+						<img src="desgin-bg.jpg" alt="poza" style="width: 100%" />
+						<button class="prima prima2"><a name="services">design</a></button>
+					</div>
+
+					<div class="carte carte3">
+						<img src="concept-bg.jpg" alt="poza" style="width: 100%" />
+						<button class="prima prima3"><a name="services">concept</a></button>
+					</div>
+
+					<div class="carte carte4">
+						<img src="systam-bg.jpg" alt="poza" style="width: 100%" />
+						<button class="prima prima4"><a name="services">system</a></button>
+					</div>
+				</div>
+
+				<!-- PRICIIIING -->
+
+				<div class="pricing">
+					<p><a name="pricing"></a></p>
+					<h1>pricing</h1>
+					<p>
+						All plans come with unlimited disk space. Our support can be as
+						quick as 15 minutes to get a response. Sed non mauris vitae erat
+						consequat auctor eu in elit. Class aptent taciti sociosqu.
+					</p>
+					<div class="linie"></div>
+
+					<div class="tabel">
+						<div class="tab2">
+							<p class="rotate first">basic</p>
+							<p class="bani second">$27.50</p>
+							<p class="banda first">2,000 GB<br />BAND WIDTH</p>
+							<p class="capacitate first">32 GB<br />MEMORY</p>
+							<p class="orar first">SUPPORT<br />24 HOURS</p>
+							<p class="update first">UPDATE<br />$20</p>
+							<p class="order second"><a href="#home">ORDER NOW</a></p>
+						</div>
+						<div class="tab2">
+							<p class="rotate first">biz</p>
+							<p class="bani second">$44.50</p>
+							<p class="banda first">5,500 GB<br />BAND WIDTH</p>
+							<p class="capacitate first">64 GB<br />MEMORY</p>
+							<p class="orar first">SUPPORT<br />1 HOURS</p>
+							<p class="update first">UPDATE<br />$10</p>
+							<p class="order second"><a href="#home">ORDER NOW</a></p>
+						</div>
+						<div class="tab2">
+							<p class="rotate first">pro</p>
+							<p class="bani second">$72.50</p>
+							<p class="banda first">12,000 GB<br />BAND WIDTH</p>
+							<p class="capacitate first">128 GB<br />MEMORY</p>
+							<p class="orar first">SUPPORT<br />15 MINS</p>
+							<p class="update first">UPDATE<br />FREE</p>
+							<p class="order second"><a href="#home"> ORDER NOW</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- CONTACT -->
+
+				<div class="contact">
+					<p><a name="contact"></a></p>
+					<h1>CONTACT US</h1>
+					<p class="sed">
+						Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum
+						fermentum nunc. Etiam pharetra, erat sed fermentum feugiat velit
+						mauris egestas quamut aliquam massa nisl quis neque. Suspendisse in
+						orci enim.
+					</p>
+					<div class="linie"></div>
+
+					<!-- google maps -->
+
+					<div id="map"></div>
+
+					<script>
+						function initMap() {
+							var options = {
+								zoom: 8,
+								center: { lat: 47.151726, lng: 27.587914 },
+							};
+							var map = new google.maps.Map(
+								document.getElementById("map"),
+								options
+							);
+						}
+					</script>
+
+					<script
+						async
+						defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn5zns2iUOOSQ_3kaV0uI7pyCxC0VHYVY&callback=initMap"
+					></script>
+					<!-- ending google maps -->
+
+					<div class="contactform">
+						<form action="" method="get">
+							<p class="top">
+								<input type="text" id="text" name="text" placeholder="NAME" />
+							</p>
+
+							<p>
+								<input type="email" name="url" id="email" placeholder="EMAIL" />
+							</p>
+
+							<p>
+								<input type="text" id="text" name="text" placeholder="TITLE" />
+							</p>
+
+							<p>
+								<textarea
+									id="comentarii"
+									name="comentarii"
+									placeholder="MESSAGE"
+								></textarea>
+							</p>
+
+							<p>
+								<button type="submit">SEND</button>
+							</p>
+						</form>
+
+						<div class="info">
+							<p class="dreapta get">Get in touch !</p>
+
+							<i class="far fa-map"></i>
+							<p class="dreapta">
+								990 Proin Gravida Street, Aliquet Snean Tate,<br />
+								Lincoln Way, San Francisco, California.
+							</p>
+
+							<i class="fas fa-phone-alt"></i>
+							<p class="dreapta">
+								(+001) 001 002 0034, (+002) 009 008 0760<br />
+								(+003) 456 050 0670
+							</p>
+
+							<i class="far fa-envelope"></i>
+							<p class="dreapta">info@november.com</p>
+
+							<img src="facebook-icn.png" style="width: 5%" />
+							<img src="twitter-icn.png" style="width: 5%" />
+							<img src="google-plus-icn.png" style="width: 5%" />
+						</div>
+					</div>
+					<!-- closing contact form -->
+				</div>
+				<!-- closing contact -->
+			</div>
+			<!-- closing services -->
+		</div>
+		<!-- closing container -->
+	</body>
+</html>
